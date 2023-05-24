@@ -22,8 +22,86 @@
 			</ul>
 		</nav>
 		<section>
-			<h2>Integrantes</h2>
-			
+			<h2>Formularios</h2>
+			<p>Los campos que tienen un * son requeridos para el envio del formulario</p>
+			<form>
+				<label for="nombre">*Nombre: </label>
+				<input type="text" id="nombre" required placeholder="Escriba su nombre">
+				<br>
+				<label for="apellido">*Apellido: </label>
+				<input type="text" id="apellido" required value="Falla">
+				<br>
+				<label for="edad">Edad: </label>
+				<input type="number" id="edad">
+				<br>
+				<label for="fecha">*Fecha de Nacimiento: </label>
+				<input type="date" id="fecha" required>
+				<br>
+				<label for="correo">*Correo electrónico: </label>
+				<input type="email" id="correo" required>
+				<br>
+				<label for="contrasena">*Contraseña: </label>
+				<input type="password" id="contrasena" required>
+				<br>
+				<label for="telefono">Teléfono: </label>
+				<input type="tel" id="telefono">
+				<br>
+				<p>Indique su medio de comunicación favorito</p>
+				<div>
+					<input type="radio" id="internet" name="conect"> 
+					<label for="internet">Internet</label>
+					<input type="radio" name="conect" id="whatsapp"> 
+					<label for="whatsapp">Whatsapp</label>
+					<input type="radio" name="conect" id="Celular"> 
+					<label for="Celular">Celular</label>
+				</div>
+				<br>
+				<div>
+					<input type="checkbox" name="pc" id="PC"> 
+					<label for="PC">PC</label>
+					<input type="checkbox" name="pc" id="cel"> 
+					<label for="cel">Celular</label>
+				</div><br>
+				<label for="ciudad">Ciudad:</label>
+				<select name="ciudad" id="ciudad">
+					<option value="armenia">Armenia</option> 
+					<option value="manizales">Manizales</option>
+					<option value="pereira">Pereira</option>
+				</select><br><br>
+				<select>
+					<optgroup label="Quindío">
+						<option value="valor1">Armenia</option>
+						<option value="valor3">Calarcá</option>
+						<option value="valor5">Circasia</option>
+					</optgroup>
+					<optgroup label="Risaralda">
+						<option value="valor2">Pereira</option>
+						<option value="valor4">Dosquebradas</option>
+						<option value="valor6">Santa Rosa</option>
+					</optgroup>
+				</select><br><br>
+				<input list="browsers" name="browser">
+				<datalist id="browsers">
+					<option value="Edge">
+					<option value="Firefox">
+					<option value="Chrome">
+					<option value="Opera">
+					<option value="Safari">
+				</datalist><br><br>
+				<fieldset>
+					<legend>Personalia:</legend>
+					<label for="fname">First name:</label><br>
+					<input type="text" id="fname" name="fname" value="John"><br>
+					<label for="lname">Last name:</label><br>
+					<input type="text" id="lname" name="lname" value="Doe"><br><br>
+				</fieldset>
+				<br>
+				<label>Escriba su mensaje:</label><br>
+				<textarea rows="5" cols="50">Hola</textarea><br>
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Borrar">
+				<button>Enviar</button>
+			</form>
 		</section>
 		<footer>
 			<p id="textFooter">Página realizada por Henry A. Falla O. &copy; Todos los derechos reservados</p>
